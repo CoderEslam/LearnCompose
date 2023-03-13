@@ -1,0 +1,292 @@
+{
+  "name": "map",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "55i1Ok06GPOYcukOHll7EJ",
+    "node": "233:342",
+    "version": "3159567334",
+    "component-id": "abbe795b9cdeb034a3f09eb1544ae3e53d8ea20b"
+  },
+  "default": "map",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      }
+    ],
+    "modes": {
+      "map": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "25.0",
+            "is-structured": "false",
+            "children": "$map children",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.9490196078431372"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "map children": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "map",
+      "size": {
+        "width": 428.0,
+        "height": 926.0
+      },
+      "parameters": {
+        "map children": [
+          {
+            "type": "vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 98.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -104.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 446.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 455.0
+              }
+            },
+            "vector-content": "ellipse_6.svg"
+          },
+          {
+            "type": "vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": -99.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 312.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 450.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 466.0
+              }
+            },
+            "vector-content": "ellipse_7.svg"
+          },
+          {
+            "type": "image",
+            "border-radius": 25.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 14.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 23.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 400.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 890.0
+              }
+            },
+            "image-content": "bba3e02c4c004262f0a5311da259bb11_1.jpeg",
+            "scale": "cover"
+          },
+          {
+            "type": "group",
+            "border-radius": 20.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 14.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 778.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 398.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 58.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "vector",
+                "border-radius": 20.0,
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 398.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 58.0
+                  }
+                },
+                "vector-content": "rectangle_28.svg"
+              },
+              {
+                "type": "text",
+                "alignment": {
+                  "horizontal": {
+                    "attachment": "start",
+                    "offset": 122.0
+                  },
+                  "vertical": {
+                    "attachment": "start",
+                    "offset": 17.0
+                  }
+                },
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 153.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 23.0
+                  }
+                },
+                "font-weight": 300.0,
+                "color": {
+                  "alpha": "1.0",
+                  "hue": "0.0",
+                  "saturation": "0.0",
+                  "value": "1.0"
+                },
+                "text-content": "Enable Location",
+                "overflow": "visible",
+                "max-lines": -1,
+                "text-size": 20.0,
+                "line-height": 1.171875
+              }
+            ],
+            "clip-content": false
+          },
+          {
+            "type": "group",
+            "border-radius": 20.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 15.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 850.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 398.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 58.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              {
+                "type": "vector",
+                "border-radius": 20.0,
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 398.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 58.0
+                  }
+                },
+                "vector-content": "rectangle_29.svg"
+              },
+              {
+                "type": "text",
+                "alignment": {
+                  "horizontal": {
+                    "attachment": "start",
+                    "offset": 122.0
+                  },
+                  "vertical": {
+                    "attachment": "start",
+                    "offset": 17.0
+                  }
+                },
+                "size-constraints": {
+                  "width-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 153.0
+                  },
+                  "height-constraints": {
+                    "sizing-mode": "fixed",
+                    "value": 23.0
+                  }
+                },
+                "font-weight": 300.0,
+                "color": {
+                  "alpha": "1.0",
+                  "hue": "0.0",
+                  "saturation": "1.0",
+                  "value": "0.011764705882352941"
+                },
+                "text-content": "No , I do it later",
+                "overflow": "visible",
+                "max-lines": -1,
+                "text-size": 20.0,
+                "line-height": 1.171875
+              }
+            ],
+            "clip-content": false
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

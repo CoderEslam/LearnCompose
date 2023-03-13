@@ -13,9 +13,13 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.doubleclick.learncompose.map.Map
 import com.doubleclick.learncompose.ui.theme.LearnComposeTheme
 
 class MainActivity : ComponentActivity() {
+
+    //https://www.theinsaneapp.com/2021/08/android-jetpack-compose-tutorials.html
+    //https://foso.github.io/Jetpack-Compose-Playground/material/scaffold/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -106,14 +110,13 @@ fun MySurface() {
             color = MaterialTheme.colors.primary
         ) {
         }
-        customItem()
-        Surface(
-            modifier = Modifier
-                .width(200.dp)
-                .height(50.dp),
-            color = MaterialTheme.colors.primary
-        ) {
-        }
+        Spacer(modifier = Modifier.height(20.dp))
+        customItem(1f)
+        Spacer(modifier = Modifier.height(20.dp))
+        customItem(1f)
+        Spacer(modifier = Modifier.height(20.dp))
+        TextF()
+        Spacer(modifier = Modifier.height(20.dp))
         Surface(
             modifier = Modifier
                 .width(200.dp)
@@ -122,6 +125,17 @@ fun MySurface() {
         ) {
         }
         Spacer(modifier = Modifier.height(20.dp))
+        Surface(
+            modifier = Modifier
+                .width(200.dp)
+                .height(50.dp),
+            color = MaterialTheme.colors.primary
+        ) {
+        }
+        Spacer(modifier = Modifier.height(20.dp))
+        Map(modifier = Modifier.height(50.dp).width(200.dp)) {
+
+        }
         Row(modifier = Modifier.fillMaxSize()) {
             Surface(
                 modifier = Modifier
@@ -139,17 +153,18 @@ fun MySurface() {
             ) {
             }
         }
+
     }
 }
 
 @Composable
-fun ColumnScope.customItem() {
+fun ColumnScope.customItem(weight:Float,color: Color = MaterialTheme.colors.primary) {
     Surface(
         modifier = Modifier
             .width(200.dp)
-            .weight(1f), color = MaterialTheme.colors.primary
+            .height(50.dp),
+        color = color
     ) {
-
     }
 }
 
