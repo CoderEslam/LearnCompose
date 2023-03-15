@@ -6,6 +6,8 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.text.selection.DisableSelection
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -28,7 +30,19 @@ class TextActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             LearnComposeTheme {
-                text()
+                Column {
+                    SelectionContainer {
+                        Column {
+                            Text(text = "Eslam Ghazy")
+                            DisableSelection {
+                                Text(text = "Eslam Ghazy")
+                            }
+                            Text(text = "Eslam Ghazy")
+                        }
+                    }
+                    text()
+                    textSelection()
+                }
             }
         }
     }
@@ -59,4 +73,17 @@ class TextActivity : ComponentActivity() {
         }
     }
 
+    @Composable
+    // to make text selectable
+    private fun textSelection() {
+        SelectionContainer {
+            Column {
+                Text(text = "Eslam Ghazy")
+                DisableSelection {
+                    Text(text = "Eslam Ghazy")
+                }
+                Text(text = "Eslam Ghazy")
+            }
+        }
+    }
 }
