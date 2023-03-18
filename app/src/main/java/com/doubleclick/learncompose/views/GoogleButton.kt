@@ -27,9 +27,13 @@ import com.google.relay.compose.RowScopeInstanceImpl.weight
 @Composable
 fun GoogleButton(
     text: String = "Sign up with google",
-    loadingAccout: String = "Loading",
+    loadingAccout: String = "Creating Account ...",
     icon: Painter = painterResource(id = R.drawable.google),
-    shape: Shape = Shapes.medium
+    shape: Shape = Shapes.medium,
+    borderColor: Color = Color.LightGray,
+    backgroundColor: Color = MaterialTheme.colors.surface,
+    progressIndcatotColor: Color = MaterialTheme.colors.primary,
+    onClicked: (x:Int) -> Unit
 ) {
     var clicked by remember {
         mutableStateOf(false)
@@ -37,8 +41,8 @@ fun GoogleButton(
     Surface(
         onClick = { clicked = !clicked },
         shape = shape,
-        border = BorderStroke(width = 1.dp, color = Color.LightGray),
-        color = MaterialTheme.colors.surface
+        border = BorderStroke(width = 2.dp, color = borderColor),
+        color = backgroundColor
     ) {
         Row(
             modifier = Modifier
@@ -69,8 +73,9 @@ fun GoogleButton(
                         .height(16.dp)
                         .width(16.dp),
                     strokeWidth = 2.dp,
-                    color = MaterialTheme.colors.primary
+                    color = progressIndcatotColor
                 )
+                onClicked(5)
             }
         }
     }
@@ -80,5 +85,5 @@ fun GoogleButton(
 @Composable
 @Preview
 fun GoogleButtonPreview() {
-    GoogleButton()
+    GoogleButton(onClicked ={})
 }

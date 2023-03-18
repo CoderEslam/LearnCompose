@@ -2,6 +2,7 @@ package com.doubleclick.learncompose
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -23,8 +24,14 @@ class CardActivity : ComponentActivity() {
             LearnComposeTheme {
                 Column(modifier = Modifier.fillMaxSize()) {
                     expandableCard(titel = "Hello", description = "Good Morinng")
-                    inputText(t  = "Eslam",enabled = true, context = this@CardActivity)
-                    GoogleButton()
+                    inputText(t = "Eslam", enabled = true, context = this@CardActivity)
+                    GoogleButton(onClicked = {
+                        Toast.makeText(
+                            this@CardActivity,
+                            "Creating Account ...$it",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    })
                 }
 
             }
