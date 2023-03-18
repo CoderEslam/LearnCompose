@@ -26,8 +26,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import com.doubleclick.learncompose.ui.theme.Shapes
-import com.google.relay.compose.RowScopeInstanceImpl.weight
-import java.io.FileDescriptor
 
 @ExperimentalMaterialApi
 @Composable

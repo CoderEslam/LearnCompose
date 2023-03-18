@@ -13,7 +13,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.doubleclick.learncompose.map.Map
 import com.doubleclick.learncompose.ui.theme.LearnComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -133,9 +132,6 @@ fun MySurface() {
         ) {
         }
         Spacer(modifier = Modifier.height(20.dp))
-        Map(modifier = Modifier.height(50.dp).width(200.dp)) {
-
-        }
         Row(modifier = Modifier.fillMaxSize()) {
             Surface(
                 modifier = Modifier

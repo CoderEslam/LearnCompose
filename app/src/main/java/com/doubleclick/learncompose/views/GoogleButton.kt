@@ -20,7 +20,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.doubleclick.learncompose.R
 import com.doubleclick.learncompose.ui.theme.Shapes
-import com.google.relay.compose.RowScopeInstanceImpl.weight
 
 @OptIn(ExperimentalMaterialApi::class)
 @ExperimentalStdlibApi
