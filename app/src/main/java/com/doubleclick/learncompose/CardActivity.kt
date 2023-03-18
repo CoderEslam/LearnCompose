@@ -9,12 +9,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.ui.Modifier
 import com.doubleclick.learncompose.ui.theme.LearnComposeTheme
+import com.doubleclick.learncompose.views.GoogleButton
 import com.doubleclick.learncompose.views.expandableCard
 import com.doubleclick.learncompose.views.inputText
 
 class CardActivity : ComponentActivity() {
 
-    @OptIn(ExperimentalMaterialApi::class)
+    @OptIn(ExperimentalMaterialApi::class, ExperimentalStdlibApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -23,6 +24,7 @@ class CardActivity : ComponentActivity() {
                 Column(modifier = Modifier.fillMaxSize()) {
                     expandableCard(titel = "Hello", description = "Good Morinng")
                     inputText(t  = "Eslam",enabled = true, context = this@CardActivity)
+                    GoogleButton()
                 }
 
             }
