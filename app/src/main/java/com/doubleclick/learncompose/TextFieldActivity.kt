@@ -18,11 +18,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import com.doubleclick.learncompose.ui.theme.LearnComposeTheme
+import com.doubleclick.learncompose.views.GradientButton
 
 class TextFieldActivity : ComponentActivity() {
 
@@ -77,5 +80,12 @@ fun Textfield() {
                 PasswordVisualTransformation()
             }
         )
+        GradientButton(
+            text = "Button",
+            textColor = Color.LightGray,
+            gradient = Brush.horizontalGradient(colors = listOf(Color.Cyan, Color.Green))
+        ) {
+
+        }
     }
 }
